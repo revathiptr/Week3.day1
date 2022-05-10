@@ -1,0 +1,48 @@
+package week3.day1;
+
+public class Vehicle {
+	public void applyBrake() {
+		System.out.println("brake applied");
+	}
+	public void applyHorn() {
+		System.out.println("Horn applied");
+	}
+}
+
+
+package week3.day1;
+
+public class Car extends Vehicle{
+	public void handBrake()
+	{
+		System.out.println("Hand brake Applied");
+	}
+	public void turnAC()
+	{
+		System.out.println("Turned on AC");
+	}
+}
+
+
+package week3.day1;
+
+public class BMW extends Car {
+	public void autoPark()
+	{
+		System.out.println("Parked the vehicle");
+	}
+}
+
+package week3.day1;
+
+public class MyCar {
+	public static void main(String[] args) {
+		BMW obj = new BMW();
+		obj.autoPark();
+		obj.turnAC();
+		obj.handBrake();
+		obj.applyBrake();
+		obj.applyHorn();
+	}
+	
+}

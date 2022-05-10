@@ -1,0 +1,56 @@
+package week3.day1;
+
+public class College {
+public void collegeName()
+{
+	System.out.println("Velammal college of engineering");
+}
+public void collegeCode()
+{
+	System.out.println("C101");
+}
+public void collegeRank()
+{
+	System.out.println("rank 15");
+}
+}
+
+
+
+package week3.day1;
+
+public class Department extends College {
+public void deptName()
+{
+	System.out.println("ECE");
+}
+}
+
+
+
+package week3.day1;
+
+public class Student extends Department {
+public void studentName()
+{
+	System.out.println("Nivetha C");
+}
+public void studentDept()
+{
+	System.out.println("ECE Department");
+}
+public void studentID()
+{
+	System.out.println("4731");
+}
+public static void main(String[] args) {
+	Student obj = new Student();
+	obj.collegeCode();
+	obj.collegeName();
+	obj.collegeRank();
+	obj.studentName();
+	obj.studentDept();
+	obj.studentID();
+	obj.deptName();
+}
+}

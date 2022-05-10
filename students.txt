@@ -1,0 +1,22 @@
+package week3.day1;
+
+public class Students {
+	public void studentInfo(String StudentID)
+	{
+		System.out.println(StudentID);
+	}
+	public void studentInfo(String Name, String StudentID)
+	{
+		System.out.println(Name+" "+StudentID);
+	}
+	public void studentInfo (String email, long PhoneNumber)
+	{
+		System.out.println(email+" "+PhoneNumber);
+	}
+public static void main(String[] args) {
+	Students obj = new Students();
+	obj.studentInfo("ECE001");
+	obj.studentInfo("nivethaece0798@gmail.com", 9840537037L);
+	obj.studentInfo("Nivetha", "ECE0001");
+}
+}

@@ -1,0 +1,34 @@
+package week3.day1;
+
+public class AxisBank extends BankInfo {
+	public void deposit() {
+		System.out.println("deposited account from child class");
+		super.deposit();
+		
+	}
+	public static void main(String[] args) {
+		AxisBank obj = new AxisBank();
+		obj.deposit();
+		obj.saving();
+		obj.fixed();
+		BankInfo obj1 = new BankInfo();
+		obj1.deposit();
+		
+	}
+}
+package week3.day1;
+
+public class BankInfo {
+public void saving()
+{
+	System.out.println("savings account");
+}
+public void fixed()
+{
+	System.out.println("fixed account");
+}
+public void deposit()
+{
+	System.out.println("deposit account from parent class");
+}
+}

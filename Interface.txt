@@ -1,0 +1,49 @@
+package week3.day1;
+
+public class Automation implements Language, TestTool{
+public static void main(String[] args) {
+	Automation obj1 = new Automation();
+	obj1.java();
+	obj1.Selenium();
+	obj1.defaultMethod();
+	
+}
+public void Selenium() {
+	// TODO Auto-generated method stub
+	
+	System.out.println("Learning selenium from implementation class");
+}
+
+public void java() {
+	// TODO Auto-generated method stub
+	System.out.println("Learning java from implementation class");
+}
+public void defaultMethod()
+{
+	this.java();
+	this.Selenium();
+	System.out.println("default method");
+}
+}
+
+
+
+
+
+package week3.day1;
+
+public interface TestTool {
+
+public void Selenium();
+
+}
+
+
+package week3.day1;
+
+public interface Language {
+
+	public void java();
+	
+	
+}
